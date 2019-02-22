@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+<title>CSS selectors</title>   
+   </head> 
+<style>
+
+	/*Attribute SELECTOR*/
+a[type_selector] {
+  background-color: red;
+}
+
+* {
+	/*UNIVERSAL SELECTOR*/
+  background-color: yellow;
+}
+
+	/*Type Selector*/
+div + li {
+  background-color: green;
+}
+
+/*Class Selector*/
+.classSelector {
+background-color: aqua; 
+}
+
+/*ID Selector*/
+#Pbutton {
+  background-color: brown;
+  }
+  
+  /*Child selector*/
+  p:nth-child(2) {
+  background: red;
+}
+
+/*group selector*/
+h1, p {
+  color: pink;
+}
+
+</style>
+   
+   <body>  
+ <h1>Machine learning</h1>
+ <p>Machine learning is a field of <u>computer science </u>that gives computers the ability to 
+ learn without being explicitly programmed.</p>
+ 
+ 
+ <p><b><i>Machine learning</i></b> is closely related to (and often overlaps with) computational statistics, 
+ which also focuses on prediction-making through the use of computers. </p>
+ </div>
+ 
+ 
+ <p>Machine learning is sometimes conflated with <u><b>data mining</b><u>, where the latter subfield focuses more on 
+ exploratory data analysis and is known as unsupervised learning.:vii Machine learning can also be 
+ unsupervised and be used to learn and establish baseline behavioral profiles for various entities
+ and then used to find meaningful anomalies.</p>  
+ 
+
+<p>Here are a few widely publicized examples of machine learning applications you may be familiar with:</p>
+<ul>
+<div>
+<li>The heavily hyped, self-driving Google car The essence of machine learning.</li>
+<li>Online recommendation offers such as those from <u><i>Amazon and Netflix Machine learning</i></u> applications for 
+everyday life.</li>
+</div>
+<li>Knowing what customers are saying about you on Twitter? Machine learning combined with linguistic rule creation.</li>
+<li>Fraud detection? One of the more obvious, important uses in our world today.</li>
+</ul>
+
+<br/>
+<a href="http://www.google.com" type_selector="">More information about machine learning</a> <br/>
+<form action="" method="POST">
+	    <div class="classSelector"> <h3>Name:</h3>  
+         First name: <input type = "text" name = "first_name" />
+         Last name:   <input type = "text" name = "last_name" />
+     
+	  
+         <h3>Contact information</h3>
+         <h4>Email</h4> 
+         Email address: <input type = "text" name = "phone" />
+         <h4>Phone</h4> 
+         Phone number: <input type = "text" name = "phone" />
+         
+         <h4>Address:</h4>
+         Stree number and name: <input type = "text" name = "streetname" />
+		  City  name: <input type = "text" name = "cityname" />   
+                  Province name:
+		   <select name = "province">
+				<option value = "Ontario">ON</option>
+				<option value = "Quebec">QC</option>	
+				<option value = "Nova Scotia">NS</option>	
+				<option value = "New Brunswick">NB</option>		
+				<option value = "Manitoba">	MB</option>		
+				<option value = "British Columbia">	BC</option>	
+				<option value = "Prince Edward Island">PE</option>	
+				<option value = "Saskatchewan">	SK</option>	
+				<option value = "Alberta">AB</option>		
+				<option value = "Newfoundland and Labrador">NL</option>
+         </select>
+          <br /><br />        
+		  Post code: <input type = "text" name = "postcode" />
+		 </div>
+		  
+        <h3>User information</h3>
+ 		 
+		 User ID : <input type = "text" name = "user_id" />
+         Password: <input type = "password" name = "password" />
+         <br/> <br />	
+<div class ="Pbutton">		<p id ="Pbutton"> 
+		 <input type = "radio" name = "status" value = "faculty"> Faculty
+         <input type = "radio" name = "status" value = "staff"> Staff
+         <input type = "radio" name = "status" value = "student"> Student
+   </div>            
+         <h3>Comments:</h3> 
+	 
+  		<textarea rows = "8" cols = "50" name = "description">
+            Enter your comments here...
+         </textarea>       </div>
+          <br/> <br />	
+<div class ="Pbutton">	<p id ="Pbutton">		  
+         <input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" /> 
+</div>		 
+       </form>     
+   </body>
+</html>
+
+
